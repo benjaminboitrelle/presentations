@@ -1,319 +1,205 @@
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Slides." />
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Your Slides</title>
+		<title>reveal.js</title>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="/static/reveal.css" />
-    <link rel="stylesheet" href="/static/moon.css" id="theme" />
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
 
-    <!-- Scripts -->
-    <script src="/static/reveal.js"></script>
-  </head>
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
 
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <!-- Slide 1 -->
-        <section>
-          <h2>XFEL Interview Presentation</h2>
-          <p><strong>Benjamin Boitrelle, Ph. D.</strong><br />27.11.2024</p>
-        </section>
-
-        <!-- Slide 2: Table of Contents -->
-        <section>
-          <h2>Table of Contents</h2>
-          <ol>
-            <li>Introduction</li>
-            <li>Journey from Physics to Software Development</li>
-            <ul>
-              <li>Doctoral Research</li>
-              <li>Postdoctoral Research</li>
-            </ul>
-            <li>Industry Experience</li>
-            <ul>
-              <li>Dermalog Identification Systems GmbH</li>
-              <li>Ferchau Engineering (Dräger)</li>
-            </ul>
-            <li>What Drives Me</li>
-            <li>Hobbies and Interests</li>
-            <li>Final Thoughts</li>
-          </ol>
-        </section>
-
-        <!-- Slide 3: Introduction -->
-        <section>
-          <h2>Introduction</h2>
-          <h3>A Multidisciplinary Physicist</h3>
-          <ul>
-            <li>
-              Studied high-energy physics and expertize in scientific software
-              development
-            </li>
-            <li>
-              Specialized in detector tests, data analysis, and algorithm
-              development
-            </li>
-            <li>Experienced in project leadership and mentoring</li>
-            <li>Collaborative mindset with a multicultural background</li>
-          </ul>
-        </section>
-
-        <!-- Slide 4: Journey from Physics to Software Development -->
-        <section>
-          <h2>Journey from Physics to Software Development</h2>
-          <h3>Doctoral Research (2013–2017)</h3>
-          <p>
-            <strong>Institution</strong>: DESY, Hamburg & University of
-            Strasbourg, France
-          </p>
-          <p>
-            <strong>Thesis</strong>: "Intelligent detection layers for advanced
-            tracking in high-energy physics"
-          </p>
-        </section>
-
-        <!-- Slide 5: Key Contributions -->
-        <section>
-          <h3>Key Contributions</h3>
-          <ul>
-            <li>
-              Validated detection layers to improve particle tracking accuracy
-              for the ILC
-            </li>
-            <li>
-              Ensured that the double-sided mechanical structure maintained
-              minimal impact on particle trajectories
-            </li>
-            <li>
-              Achievements:
-              <ul>
-                <li>
-                  Conducted deformation tests and implemented strategies to
-                  enhance sensor reliability
-                </li>
-                <li>
-                  Led successful data acquisition campaigns to confirm
-                  theoretical material budget predictions
-                </li>
-              </ul>
-            </li>
-            <li>
-              Presented findings at
-              <a
-                href="https://agenda.linearcollider.org/event/6662/contributions/32556/attachments/26758/40884/LCWS15_vtx_session_PLUME_bboitrelle.pdf"
-                >LCWS 2015</a
-              >
-            </li>
-          </ul>
-        </section>
-
-        <!-- Slide 6: Postdoctoral Research -->
-        <section>
-          <h2>Postdoctoral Research (2017–2019)</h2>
-          <p>
-            <strong>Role</strong>: Synchrotron SOLEIL, Saint-Aubin, France —
-            based at CFEL, Hamburg, Germany
-          </p>
-        </section>
-
-        <!-- Slide 7: Key Contributions -->
-        <section>
-          <h3>Key Contributions</h3>
-          <ul>
-            <li>
-              Developed a Python-based framework to characterize, calibrate, and
-              analyze PERCIVAL CMOS detector
-            </li>
-            <li>
-              Enhanced testing workflows by creating modular tools for data
-              characterization and visualization
-            </li>
-            <li>
-              Represented Synchrotron SOLEIL in collaboration, reporting
-              progress and presenting results
-            </li>
-            <li>
-              Presented work at major conferences:
-              <ul>
-                <li>
-                  <a
-                    href="https://agenda.infn.it/event/17834/contributions/84340/"
-                    >14th Pisa Meeting</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://indico.cern.ch/event/774201/contributions/3429355/attachments/1879064/3095337/poster_percival_benjamin_boitrelle_iWorid_19.pdf"
-                    >iWoRiD 2019</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Slide 8: Industry Experience -->
-        <section>
-          <h2>Industry Experience</h2>
-        </section>
-
-        <!-- Dermalog Slide -->
-        <section>
-          <h3>Dermalog Identification Systems GmbH</h3>
-          <ul>
-            <li>
-              Developed algorithms for 3D-camera-based background suppression,
-              improving imaging reliability
-            </li>
-            <li>
-              Corrected color distortions in border control camera systems,
-              ensuring better visual fidelity
-            </li>
-            <li>
-              Achieved significant reductions in processing time while enhancing
-              device precision
-            </li>
-            <li>R&D project for building a 360° camera</li>
-          </ul>
-        </section>
-
-        <!-- Thermal Camera Calibration Slide -->
-        <section>
-          <h3>Body Temperature Measurement</h3>
-          <ul>
-            <li>
-              During the COVID-19 pandemic, rising demand for thermal cameras
-              exposed inefficiencies in manual calibration, leading to
-              inconsistent measurements and customer complaints
-            </li>
-            <li>
-              Automated the calibration process to improve accuracy, speed, and
-              scalability, while restoring customer trust
-            </li>
-            <li>
-              <strong>Actions</strong>:
-              <ul>
-                <li>
-                  Led a team to manage manual calibration, dividing tasks
-                  effectively to meet production targets
-                </li>
-                <li>
-                  Designed and implemented an automated calibration system with
-                  algorithms to account for environmental factors like drafts
-                </li>
-                <li>
-                  Collaborated with hardware engineers to integrate the new
-                  system into the production workflow
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Slide 9: Results -->
-        <section>
-          <h3>Result</h3>
-          <ul>
-            <li>
-              Increased production speed by 2x, meeting surging demand without
-              sacrificing accuracy
-            </li>
-            <li>
-              Reduced operator involvement, improving production efficiency and
-              reducing errors
-            </li>
-            <li>
-              Restored customer trust by ensuring measurement accuracy
-              comparable to the manufacturer’s standards
-            </li>
-          </ul>
-        </section>
-
-        <!-- Ferchau Engineering Slide -->
-        <section>
-          <h3>Ferchau Engineering (Dräger)</h3>
-          <ul>
-            <li>
-              Refactored legacy code to meet modern C++17 standards, improving
-              maintainability and reliability
-            </li>
-            <li>
-              Enhanced unit testing and documentation to achieve FDA compliance
-            </li>
-            <li>
-              Contributed to an agile development environment, ensuring
-              efficient collaboration and delivery
-            </li>
-            <li>
-              Delivered a robust and compliant software system that met
-              regulatory and operational requirements
-            </li>
-          </ul>
-        </section>
-
-        <!-- Slide 10: What Drives Me -->
-        <section>
-          <h2>What Drives Me</h2>
-        </section>
-
-        <!-- Short-Term Goals -->
-        <section>
-          <h3>Short-Term Goals</h3>
-          <ul>
-            <li>
-              Develop efficient, maintainable software solutions for XFEL’s
-              scientific goals
-            </li>
-            <li>Enhance detector precision and data quality</li>
-          </ul>
-        </section>
-
-        <!-- Long-Term Goals -->
-        <section>
-          <h3>Long-Term Goals</h3>
-          <ul>
-            <li>Transition into interdisciplinary project management</li>
-            <li>
-              Support XFEL’s cutting-edge science with innovative leadership
-            </li>
-          </ul>
-        </section>
-
-        <!-- Hobbies and Interests -->
-        <section>
-          <h2>Hobbies and Interests</h2>
-          <ul>
-            <li>Jazz guitarist performing in Hamburg ensembles</li>
-            <li>Enthusiast of yoga, pilates, running, and bouldering</li>
-            <li>Avid reader with a passion for both science and fiction</li>
-          </ul>
-        </section>
-
-        <!-- Final Thoughts -->
-        <section>
-          <h2>Final Thoughts</h2>
-          <ul>
-            <li>Thank you for your time and the opportunity to interview</li>
-            <li>
-              I look forward to contributing to XFEL’s mission with my skills
-              and expertise
-            </li>
-          </ul>
-        </section>
-      </div>
-    </div>
-
-    <script>
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
-      });
-    </script>
-  </body>
+		<!-- Reveal.js Presentation -->
+		<div class="reveal">
+		  <div class="slides">
+			<!-- Slide 1 -->
+			<section>
+			  <h2>XFEL Interview Presentation</h2>
+			  <p><strong>Benjamin Boitrelle, Ph. D.</strong><br>27.11.2024</p>
+			</section>
+	  
+			<!-- Slide 2: Table of Contents -->
+			<section>
+			  <h2>Table of Contents</h2>
+			  <ol>
+				<li>Introduction</li>
+				<li>Journey from Physics to Software Development</li>
+				<ul>
+				  <li>Doctoral Research</li>
+				  <li>Postdoctoral Research</li>
+				</ul>
+				<li>Industry Experience</li>
+				<ul>
+				  <li>Dermalog Identification Systems GmbH</li>
+				  <li>Ferchau Engineering (Dräger)</li>
+				</ul>
+				<li>What Drives Me</li>
+				<li>Hobbies and Interests</li>
+				<li>Final Thoughts</li>
+			  </ol>
+			</section>
+	  
+			<!-- Slide 3: Introduction -->
+			<section>
+			  <h2>Introduction</h2>
+			  <h3>A Multidisciplinary Physicist</h3>
+			  <ul>
+				<li>Studied high-energy physics and expertize in scientific software development</li>
+				<li>Specialized in detector tests, data analysis, and algorithm development</li>
+				<li>Experienced in project leadership and mentoring</li>
+				<li>Collaborative mindset with a multicultural background</li>
+			  </ul>
+			</section>
+	  
+			<!-- Slide 4: Journey from Physics to Software Development -->
+			<section>
+			  <h2>Journey from Physics to Software Development</h2>
+			  <h3>Doctoral Research (2013–2017)</h3>
+			  <p><strong>Institution</strong>: DESY, Hamburg & University of Strasbourg, France</p>
+			  <p><strong>Thesis</strong>: "Intelligent detection layers for advanced tracking in high-energy physics"</p>
+			</section>
+	  
+			<!-- Slide 5: Key Contributions -->
+			<section>
+			  <h3>Key Contributions</h3>
+			  <ul>
+				<li>Validated detection layers to improve particle tracking accuracy for the ILC</li>
+				<li>Ensured that the double-sided mechanical structure maintained minimal impact on particle trajectories</li>
+				<li>Achievements:
+				  <ul>
+					<li>Conducted deformation tests and implemented strategies to enhance sensor reliability</li>
+					<li>Led successful data acquisition campaigns to confirm theoretical material budget predictions</li>
+				  </ul>
+				</li>
+				<li>Presented findings at <a href="https://agenda.linearcollider.org/event/6662/contributions/32556/attachments/26758/40884/LCWS15_vtx_session_PLUME_bboitrelle.pdf">LCWS 2015</a></li>
+			  </ul>
+			</section>
+	  
+			<!-- Slide 6: Postdoctoral Research -->
+			<section>
+			  <h2>Postdoctoral Research (2017–2019)</h2>
+			  <p><strong>Role</strong>: Synchrotron SOLEIL, Saint-Aubin, France — based at CFEL, Hamburg, Germany</p>
+			</section>
+	  
+			<!-- Slide 7: Key Contributions -->
+			<section>
+			  <h3>Key Contributions</h3>
+			  <ul>
+				<li>Developed a Python-based framework to characterize, calibrate, and analyze PERCIVAL CMOS detector</li>
+				<li>Enhanced testing workflows by creating modular tools for data characterization and visualization</li>
+				<li>Represented Synchrotron SOLEIL in collaboration, reporting progress and presenting results</li>
+				<li>Presented work at major conferences:
+				  <ul>
+					<li><a href="https://agenda.infn.it/event/17834/contributions/84340/">14th Pisa Meeting</a></li>
+					<li><a href="https://indico.cern.ch/event/774201/contributions/3429355/attachments/1879064/3095337/poster_percival_benjamin_boitrelle_iWorid_19.pdf">iWoRiD 2019</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			</section>
+	  
+			<!-- Slide 8: Industry Experience -->
+			<section>
+			  <h2>Industry Experience</h2>
+			</section>
+	  
+			<!-- Dermalog Slide -->
+			<section>
+			  <h3>Dermalog Identification Systems GmbH</h3>
+			  <ul>
+				<li>Developed algorithms for 3D-camera-based background suppression, improving imaging reliability</li>
+				<li>Corrected color distortions in border control camera systems, ensuring better visual fidelity</li>
+				<li>Achieved significant reductions in processing time while enhancing device precision</li>
+				<li>R&D project for building a 360° camera</li>
+			  </ul>
+			</section>
+	  
+			<!-- Thermal Camera Calibration Slide -->
+			<section>
+			  <h3>Body Temperature Measurement</h3>
+			  <ul>
+				<li>During the COVID-19 pandemic, rising demand for thermal cameras exposed inefficiencies in manual calibration, leading to inconsistent measurements and customer complaints</li>
+				<li>Automated the calibration process to improve accuracy, speed, and scalability, while restoring customer trust</li>
+				<li><strong>Actions</strong>:  
+				  <ul>
+					<li>Led a team to manage manual calibration, dividing tasks effectively to meet production targets</li>
+					<li>Designed and implemented an automated calibration system with algorithms to account for environmental factors like drafts</li>
+					<li>Collaborated with hardware engineers to integrate the new system into the production workflow</li>
+				  </ul>
+				</li>
+			  </ul>
+			</section>
+	  
+			<!-- Slide 9: Results -->
+			<section>
+			  <h3>Result</h3>
+			  <ul>
+				<li>Increased production speed by 2x, meeting surging demand without sacrificing accuracy</li>
+				<li>Reduced operator involvement, improving production efficiency and reducing errors</li>
+				<li>Restored customer trust by ensuring measurement accuracy comparable to the manufacturer’s standards</li>
+			  </ul>
+			</section>
+	  
+			<!-- Ferchau Engineering Slide -->
+			<section>
+			  <h3>Ferchau Engineering (Dräger)</h3>
+			  <ul>
+				<li>Refactored legacy code to meet modern C++17 standards, improving maintainability and reliability</li>
+				<li>Enhanced unit testing and documentation to achieve FDA compliance</li>
+				<li>Contributed to an agile development environment, ensuring efficient collaboration and delivery</li>
+				<li>Delivered a robust and compliant software system that met regulatory and operational requirements</li>
+			  </ul>
+			</section>
+	  
+			<!-- Slide 10: What Drives Me -->
+			<section>
+			  <h2>What Drives Me</h2>
+			</section>
+	  
+			<!-- Short-Term Goals -->
+			<section>
+			  <h3>Short-Term Goals</h3>
+			  <ul>
+				<li>Develop efficient, maintainable software solutions for XFEL’s scientific goals</li>
+				<li>Enhance detector precision and data quality</li>
+			  </ul>
+			</section>
+	  
+			<!-- Long-Term Goals -->
+			<section>
+			  <h3>Long-Term Goals</h3>
+			  <ul>
+				<li>Transition into interdisciplinary project management</li>
+				<li>Support XFEL’s cutting-edge science with innovative leadership</li>
+			  </ul>
+			</section>
+	  
+			<!-- Hobbies and Interests -->
+			<section>
+			  <h2>Hobbies and Interests</h2>
+			  <ul>
+				<li>Jazz guitarist performing in Hamburg ensembles</li>
+				<li>Enthusiast of yoga, pilates, running, and bouldering</li>
+				<li>Avid reader with a passion for both science and fiction</li>
+			  </ul>
+			</section>
+	  
+			<!-- Final Thoughts -->
+			<section>
+			  <h2>Final Thoughts</h2>
+			  <ul>
+				<li>Thank you for your time and the opportunity to interview</li>
+				<li>I look forward to contributing to XFEL’s mission with my skills and expertise</li>
+			  </ul>
+			</section>
+	  
+		  </div>
+		</div>
+	  
+	  </body>
 </html>
