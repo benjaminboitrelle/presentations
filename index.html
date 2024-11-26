@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/moon.css" />
+    <link rel="stylesheet" href="dist/theme/white_xfel.css" />
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
@@ -33,7 +33,7 @@
       }
       .col_reduced {
         flex: 1;
-        font-size: x-large;
+        font-size: xx-large;
       }
     </style>
   </head>
@@ -44,8 +44,19 @@
       <div class="slides">
         <!-- Slide 1 -->
         <section>
-          <h2>XFEL Interview Presentation</h2>
-          <p><strong>Benjamin Boitrelle, Ph. D.</strong><br />27.11.2024</p>
+          <img
+            data-src="img/Logo_XFEL_positiv_.jpg"
+            alt="logo"
+            width="12%"
+            style="position: relative; left: 400px; bottom: 10px"
+          />
+          <div style="position: relative; bottom: 120px; text-align: left">
+            <h2>Interview</h2>
+            <h3>Software Developer For Data Reduction (E-374)</h3>
+            <p>
+              <b>Benjamin Boitrelle, Ph. D.</b><br />XFEL, Hamburg - 27.11.2024
+            </p>
+          </div>
         </section>
 
         <!-- Slide 2: Table of Contents -->
@@ -53,72 +64,87 @@
           <h2>Table of Contents</h2>
           <ol>
             <li>Introduction</li>
-            <li>Journey from physics to software development</li>
-            <li>Key skills and learning</li>
-            <li>What drives me</li>
-            <!-- <li>Journey from physics...</li>
-            <li>...to sofware development in industry</li>
-            <li>Key Learnings</li>
-            <li>What Drives Me</li> -->
+            <li>Journey From Physics To Software Development</li>
+            <li>Key Learnings and Professional Growth</li>
+            <li>What Drives Me</li>
             <li>Final Thoughts</li>
           </ol>
         </section>
 
         <!-- Slide 3: Introduction -->
         <section>
-          <section><h2>Introduction</h2></section>
           <section>
-            <h3>A Multidisciplinary Physicist</h3>
+            <h3>Introduction</h3>
             <ul>
               <li>Physicist with experience in software development</li>
-              <li>Passion for advancing research</li>
               <li>
-                Specialised in detector tests, data analysis, and algorithm
-                development
+                Strong interest in supporting scientific research through data
+                analysis and algorithm development
               </li>
               <li>
-                Contribution to XFEL’s aim of pioneering breakthroughs in X-ray
-                research
+                Keen to contribute to XFEL’s aim of advancing X-ray research
+                through innovation in software and data systems
               </li>
-              <!-- <li>Collaborative mindset with a multicultural background</li> -->
             </ul>
             <aside class="notes">
-              As a physicist with experience in software development and a
-              strong passion for advancing research in scientific
-              instrumentation, I’m excited about the opportunity to contribute
-              to XFEL’s mission of pioneering breakthroughs in X-ray research.
-              I’m passionate about applying my multidisciplinary expertise in
-              physics and software development to contribute to XFEL’s
-              cutting-edge research in X-ray science. With a background in
-              detector technology and data analysis, I’m excited to support
-              XFEL’s mission to drive groundbreaking discoveries
+              <ul style="font-size: large">
+                <li>
+                  Background in physics combined with practical experience in
+                  software development
+                </li>
+                <li>
+                  Goal -> apply my skills to XFEL's aims of advancing X-ray
+                  research
+                </li>
+                <li>
+                  Expertise in detector technology and data analysis could
+                  support the team in addressing challenges related to
+                  high-performance data processing
+                </li>
+              </ul>
             </aside>
           </section>
 
           <section>
             <h3>Why XFEL and why me</h3>
             <ul>
-              <li>Interdisciplinary nature</li>
-              <li>Opportunity to work in a multicultural environment</li>
-              <li>Technical expertise with passion to learn</li>
+              <li>
+                XFEL’s interdisciplinary approach and international environment
+                appeal to me
+              </li>
+              <li>
+                I value working in teams that bring together diverse
+                perspectives and technical expertise
+              </li>
+              <li>
+                Motivated by the opportunity to contribute to XFEL’s scientific
+                aims and further my own learning
+              </li>
             </ul>
             <aside class="notes">
-              I’m excited by XFEL’s work at the forefront of X-ray science, and
-              I’m eager to contribute my skills in software engineering and data
-              analysis to support and accelerate research. With a background in
-              developing innovative solutions for complex systems, I’m confident
-              that my skills in both hardware and software development will add
-              significant value to the team
+              XFEL’s interdisciplinary focus and collaborative environment are
+              aspects that greatly attract me. I look forward to working with a
+              diverse team, where my technical expertise and passion for
+              learning can contribute to the ongoing success of your work in
+              X-ray research
             </aside>
           </section>
         </section>
 
         <section>
           <section>
-            <h2>Journey from physics to software development</h2>
+            <h2>Journey From Physics To Software Development</h2>
+            <aside class="notes">
+              journey from physics to software development has been driven by a
+              desire to use technology to solve real-world problems. From my
+              Ph.D. research on particle tracking at DESY, to my work on X-ray
+              detectors at SOLEIL, and more recently on software solutions for
+              industry, I’ve developed a broad skill set in both the theoretical
+              and practical aspects of software development
+            </aside>
           </section>
           <section>
-            <h3>Doctoral research — 2013 - 2017</h3>
+            <h3>Doctoral research (2013 - 2017)</h3>
             <ul>
               <li>
                 <strong>Thesis</strong>:
@@ -131,11 +157,12 @@
                 <strong>Institution</strong>: DESY, Hamburg & University of
                 Strasbourg, France
               </li>
-              <li>
-                <strong>Core focus</strong>: validate detection layers to
-                improve particle tracking accuracy for the ILD @ ILC
-              </li>
             </ul>
+            <p class="left">
+              &#x21d2; Validate detection layers to improve particle tracking
+              accuracy for the ILD @ ILC
+            </p>
+            <img data-src="img/plume2.jpg" width="70%" />
           </section>
           <section>
             <h3>Doctoral research (2013 - 2017)</h3>
@@ -143,22 +170,19 @@
               <div class="col_reduced">
                 <ul>
                   <li>
-                    Ensured that the double-sided mechanical structure
-                    maintained minimal impact on particle trajectories
+                    Ensured minimal impact of the double-sided mechanical
+                    structure on particle trajectories
                   </li>
-                  <li>
-                    Achievements:
-                    <ul>
-                      <li>
-                        Conducted deformation studies and implemented strategies
-                        to enhance sensor reliability under certain conditions
-                      </li>
-                      <li>
-                        Led successful data acquisition campaigns to confirm
-                        theoretical material budget predictions
-                      </li>
-                    </ul>
-                  </li>
+                  <ul>
+                    <li>
+                      Conducted deformation studies to improve sensor
+                      reliability under specific conditions
+                    </li>
+                    <li>
+                      Managed data acquisition campaigns to validate material
+                      budget predictions
+                    </li>
+                  </ul>
                   <li>
                     Presented findings at
                     <a
@@ -169,29 +193,28 @@
                 </ul>
               </div>
               <div class="col">
-                <span class="fragment">
-                  <img data-src="img/deformation_origin.png" />
-                </span>
+                <img
+                  data-src="img/origin_deformation.png"
+                  style="margin-top: 100px"
+                />
               </div>
             </div>
           </section>
 
           <section>
-            <h3>Postdoctoral Research at Synchrotron SOLEIL (2017 – 2020)</h3>
+            <h3>Postdoctoral Research Synchrotron SOLEIL (2017 – 2020)</h3>
             <ul>
               <li>
-                Contributed to projects focused on data analysis and sensor
-                calibration for synchrotron X-ray experiments, ensuring that
-                detector performance met strict standards for scientific
-                research
+                Contributed to data analysis and sensor calibration for
+                synchrotron X-ray experiments
               </li>
               <li>
-                Developed a Python-based framework for calibrating and analyzing
-                PERCIVAL CMOS detector
+                Assisted in the development of a Python framework for
+                calibrating and analyzing PERCIVAL CMOS detectors
               </li>
               <li>
-                Represented Synchrotron SOLEIL interests in collaboration,
-                reporting
+                Represented Synchrotron SOLEIL in collaborations, providing
+                updates and presenting findings
               </li>
             </ul>
           </section>
@@ -210,232 +233,67 @@
           </section>
           <section>
             <h3>Body Temperature Measurement</h3>
-            <p class="left">
-              COVID-19 pandemic demand for thermal cameras revealed
-              inefficiencies in manual calibration, causing inconsistent
-              measurements and customer complaints
-            </p>
-            <div class="smaller_font">
-              <ul>
-                <li>
-                  Automated calibration process to improve accuracy, speed, and
-                  scalability, while restoring customer trust
-                </li>
-                <li>
-                  Led a team to manage manual calibration, dividing tasks
-                  effectively to meet production targets
-                </li>
-                <li>
-                  Designed and implemented an automated calibration system with
-                  algorithms to account for environmental factors like drafts
-                </li>
-                <li>
-                  Collaborated with hardware engineers to integrate the new
-                  system into the production workflow
-                </li>
-              </ul>
-            </div>
+            <ul>
+              <li>
+                COVID-19 pandemic led to increased demand for thermal cameras
+              </li>
+              <li>
+                Identified inefficiencies in manual calibration, leading to
+                inconsistent measurements and customer concerns
+              </li>
+              <li>
+                Coordinated a team to improve manual calibration processes and
+                meet production goals
+              </li>
+              <li>
+                Developed and implemented an automated calibration system to
+                account for environmental factors like drafts
+              </li>
+              <!-- <li>COVID-19 pandemic: thermal cameras demand &#x2197;</li>
+              <li>
+                Inefficiences in manual calibration &#x2192; inconsistent
+                measurements and customer complaints
+              </li>
+              <li>
+                Led a team to manage manual calibration, dividing tasks
+                effectively to meet production targets
+              </li>
+              <li>
+                Designed and implemented an automated calibration system with
+                algorithms to account for environmental factors like drafts
+              </li> -->
+              <!-- <li>
+                Collaborated with hardware engineers to integrate the new system
+                into the production workflow
+              </li> -->
+            </ul>
           </section>
           <section>
             <h3>Results</h3>
             <ul>
+              <li>Increased production speed x2</li>
               <li>
-                Increased production speed by 2x, meeting surging demand without
-                sacrificing accuracy
+                Decreased operator involvement &#x21d2; improve production
+                efficiency and shrink errors
               </li>
-              <li>
-                Reduced operator involvement, improving production efficiency
-                and reducing errors
-              </li>
-              <li>
-                Restored customer trust by ensuring measurement accuracy
-                comparable to the manufacturer’s standards
-              </li>
+              <li>Restored customer trust</li>
             </ul>
           </section>
 
           <section>
             <h3>Industry experience</h3>
-            <h4>Ferchau Engineering, contractor at DrÄger (2023 - 2024)</h4>
+            <h4>
+              Ferchau Engineering <br />
+              contractor at DrÄger (2023 - 2024)
+            </h4>
             <ul>
               <li>
-                Refactored legacy code for a new anaesthesia machine, ensuring
-                the code was maintainable, scalable, and met FDA approval
-                requirements
+                Refactored legacy code for a new anaesthesia machine &#x21d2;
+                maintainability, scalability
               </li>
               <li>
-                Improved unit testing and documentation for critical software
-                systems, making them more reliable in high-stakes environments
-              </li>
-            </ul>
-          </section>
-        </section>
-
-        <section>
-          <h3>Key Learnings and Professional Growth</h3>
-          <h4>Mastering Software Engineering Principles</h4>
-          <ul style="font-size: xx-large">
-            <li>
-              Applied KISS, DRY, and SOLID principles to ensure scalable and
-              maintainable software systems
-            </li>
-            <li>
-              Dermalog: Used SOLID principles to refactor the biometric SDK,
-              improving maintainability and scalability Enabled easier
-              integration of new features without complexity
-            </li>
-
-            <li>
-              Ferchau Engineering: Refactored legacy code for FDA-regulated
-              medical device Ensured simplicity, adaptability, and compliance
-              with medical standards
-            </li>
-            <li>
-              Focus on creating collaborative systems that streamline
-              multi-disciplinary teamwork
-            </li>
-            <li>
-              Ready to apply these principles to XFEL’s complex,
-              high-performance data systems
-            </li>
-          </ul>
-        </section>
-
-        <!-- 
-       
-        <section>
-          <section>
-            <h2>Postdoctoral Research (2017–2019)</h2>
-            <p>
-              <strong>Role</strong>: Synchrotron SOLEIL, Saint-Aubin, France —
-              based at CFEL, Hamburg, Germany
-            </p>
-          </section>
-          <section>
-            <h3>Key Contributions</h3>
-            <ul>
-              <li>
-                Developed a Python-based framework to characterize, calibrate,
-                and analyze PERCIVAL CMOS detector
-              </li>
-              <li>
-                Represented Synchrotron SOLEIL interests in collaboration,
-                reporting progress and presenting results
-              </li>
-              <li>
-                Evaluated the performance of commercial cameras for a soft X-ray
-                experiment through laboratory characterization and beamline
-                testing
-              </li>
-              <li>
-                Presented work at major conferences:
-                <ul>
-                  <li>
-                    <a
-                      href="https://agenda.infn.it/event/17834/contributions/84340/"
-                      >14th Pisa Meeting</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://indico.cern.ch/event/774201/contributions/3429355/attachments/1879064/3095337/poster_percival_benjamin_boitrelle_iWorid_19.pdf"
-                      >iWoRiD 2019</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </section>
-
-        </section>
-
-        <section>
-          <h2>...to sofware development in industry</h2>
-        </section>
-        <section>
-          <section>
-            <h3>Dermalog Identification Systems GmbH</h3>
-            <blockquote>
-              DERMAOG Identification Systems GmbH is Germany's largest
-              biometrics company and innovation leader
-            </blockquote>
-            <div class="container">
-              <div class="col">
-                <img
-                  data-src="img/dermalog_Fingerprint-Scanner_775x515.jpg"
-                  alt="https://www.dermalog.com/de/produkte/hardware/fingerabdruck-scanner"
-                  width="385"
-                />
-              </div>
-              <div class="col">
-                <img
-                  data-src="img/face_cameras.jpeg"
-                  alt="https://www.braunschweiger-zeitung.de/wirtschaft/article402139581/biometrische-kameras-von-dermalog-mit-dem-german-innovation-award-ausgezeichnet.html"
-                />
-              </div>
-            </div>
-          </section>
-          <section>
-            <h3>Tasks</h3>
-            <p class="lef">Part of the SDK team</p>
-            <ul>
-              <li>
-                Developed an algorithm for backrground suppression using a
-                3D-camera (old way without AI)
-              </li>
-              <li>
-                Corrected color distortions in border control camera systems,
-                ensuring better visual fidelity and respect to ICAO guidelines
-              </li>
-              <li>R&D project for building a 360° camera</li>
-            </ul>
-            <aside class="notes">
-              ICAO: International Cival Aviation Organisation
-            </aside>
-          </section>
-
-          <section>
-            <h3>Body Temperature Measurement</h3>
-            <p class="left">
-              COVID-19 pandemic demand for thermal cameras revealed
-              inefficiencies in manual calibration, causing inconsistent
-              measurements and customer complaints
-            </p>
-            <div class="smaller_font">
-              <ul>
-                <li>
-                  Automated calibration process to improve accuracy, speed, and
-                  scalability, while restoring customer trust
-                </li>
-                <li>
-                  Led a team to manage manual calibration, dividing tasks
-                  effectively to meet production targets
-                </li>
-                <li>
-                  Designed and implemented an automated calibration system with
-                  algorithms to account for environmental factors like drafts
-                </li>
-                <li>
-                  Collaborated with hardware engineers to integrate the new
-                  system into the production workflow
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section>
-            <h3>Results</h3>
-            <ul>
-              <li>
-                Increased production speed by 2x, meeting surging demand without
-                sacrificing accuracy
-              </li>
-              <li>
-                Reduced operator involvement, improving production efficiency
-                and reducing errors
-              </li>
-              <li>
-                Restored customer trust by ensuring measurement accuracy
-                comparable to the manufacturer’s standards
+                Improved unit testing and documentation to meet FDA approval
+                requiremetns
               </li>
             </ul>
           </section>
@@ -443,216 +301,74 @@
 
         <section>
           <section>
-            <h3>Ferchau Engineering (contractor at Dräger)</h3>
-            <p class="left">Development of new anaesthesia machine</p>
-            <ul>
-              <li>
-                Refactored legacy code to meet modern C++17 standards, improving
-                maintainability and reliability
-              </li>
-              <li>
-                Enhanced unit testing and documentation to prepare a FDA
-                approval
-              </li>
-              <li>
-                Contributed to an agile development environment, ensuring
-                efficient collaboration and delivery
-              </li>
-            </ul>
-          </section>
-        </section>
+            <h3>Key Learnings and Professional Growth</h3>
 
-        <section>
-          <section>
-            <h2>Key Learnings & Professional Growth</h2>
-            <ul>
+            <ul style="font-size: xx-large">
               <li>
-                <strong>Advanced Organizational Skills</strong>
-                <ul>
-                  <li>
-                    Refined time management and task prioritization to handle
-                    complex projects effectively
-                  </li>
-                  <li>
-                    Led teams and managed multiple concurrent projects in
-                    high-pressure environments
-                  </li>
-                </ul>
+                <strong>Software Engineering Principles:</strong> <br />
+                Gained a solid understanding of clean, maintainable code
+                <!-- , and principles like SOLID to build scalable systems -->
               </li>
-
               <li>
-                <strong>Mastering Software Engineering Principles</strong>
-                <ul>
-                  <li>KISS (Keep It Simple, Stupid)</li>
-                  <li>DRY (Don't Repeat Yourself)</li>
-                  <li>
-                    SOLID Principles — Applied key object-oriented design
-                    principles to create flexible, maintainable, and robust
-                    software systems
-                  </li>
-                </ul>
+                <strong>Adapting to New Tools:</strong> <br />
+                Proficient in Python, C++, and familiar with software
+                development frameworks
+              </li>
+              <li>
+                <strong>Collaboration & Problem Solving:</strong> <br />
+                Led projects and worked closely with multidisciplinary teams to
+                develop solutions
+              </li>
+              <li>
+                <strong>Embracing New Challenges:</strong> <br />
+                Keen to expand knowledge in areas like REST APIs and Ruby on
+                Rails to support XFEL’s data reduction efforts
               </li>
             </ul>
             <aside class="notes">
-              <ul>
-                <li>
-                  <strong>KISS (Keep It Simple, Stupid)</strong> — Focused on
-                  building clean, simple solutions that deliver maximum impact
-                  with minimal complexity
-                </li>
-                <li>
-                  <strong>DRY (Don't Repeat Yourself)</strong> — Strived for
-                  reusable code that reduces redundancy, increasing
-                  maintainability and scalability
-                </li>
-                <li>
-                  <strong>SOLID Principles</strong> — Applied key
-                  object-oriented design principles to create flexible,
-                  maintainable, and robust software systems
-                </li>
-              </ul>
+              Over the years, I’ve learned that problem-solving is at the core
+              of software development. Whether it’s optimizing data processing
+              in Python or adapting to new tools like C++, I’ve consistently
+              embraced challenges and expanded my technical toolkit. While I
+              don’t yet have direct experience with Ruby on Rails or Swagger, I
+              am enthusiastic about the opportunity to learn these technologies
+              quickly and apply them to the XFEL project
             </aside>
-            <aside class="notes">
-              <ul style="font-size: x-small">
-                <li>
-                  S - Single Responsibility Principle (SRP)
-                  <ul>
-                    <li>Class should have only one job</li>
-                    <li>
-                      Improve maintainability by avoiding coupling different
-                      responsibilities
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  O - Open/Closed Principle (OCP)
-                  <ul>
-                    <li>
-                      Class should be open for extension but closed for
-                      modification
-                    </li>
-                    <li>
-                      Allow new functionality to be added without changing
-                      existing code
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  L - Liskov Substitution Principle (LSP)
-                  <ul>
-                    <li>
-                      Subtypes must be substitutable for their base types
-                      without altering the correctness of the program
-                    </li>
-                    <li>
-                      Ensure derived classes adhere to the behavior of their
-                      base classes
-                    </li>
-                  </ul>
-                </li>
-                <li>I - Interface Segregation Principle (ISP)</li>
-                <ul>
-                  <li>
-                    A class should not be forced to implement interfaces it does
-                    not use
-                  </li>
-                  <li>
-                    Keep interfaces focused and avoid implementing unnecessary
-                    methods
-                  </li>
-                </ul>
-                <li>D - Dependency Inversion Principle (DIP)</li>
-                <ul>
-                  <li>
-                    High-level modules should not depend on low-level modules;
-                    both should depend on abstractions
-                  </li>
-                  <li>Decouple modules by introducing abstractions</li>
-                </ul>
-              </ul>
-            </aside>
-
-            <section>
-              <p class="smaller_font">
-                These principles have shaped my approach to software
-                development, ensuring that the solutions I create are not only
-                effective but also sustainable and scalable in the long run.
-              </p>
-            </section>
-          </section>
-        </section>
-      -->
-        <section>
-          <section><h2>Adaptability and Eagerness to Learn</h2></section>
-
-          <section>
-            <h3>Continuous Learning</h3>
-            <ul>
-              <li>
-                Adapted quickly to new technologies like <strong>C++</strong>,
-                <strong>Python</strong> across academia and industry
-              </li>
-              <li>
-                Successfully applied academic expertise to real-world problems,
-                e.g., automating thermal camera calibration during COVID-19
-              </li>
-            </ul>
-          </section>
-
-          <section>
-            <h3>Embracing New Challenges</h3>
-            <ul>
-              <li>
-                Proactively learned tools like <strong>OpenCV</strong>,
-                <strong>pandas</strong>, and
-                <strong>clean code principles</strong>
-                to improve software solutions
-              </li>
-              <li>
-                Eager to expand skills in areas like
-                <strong>REST APIs</strong> and <strong>Ruby on Rails</strong>
-                to contribute to XFEL's mission
-              </li>
-            </ul>
           </section>
         </section>
 
-        <!-- Slide 10: What Drives Me -->
         <section>
           <section>
             <h2>What Drives Me</h2>
-          </section>
-
-          <!-- Short-Term Goals -->
-          <section>
-            <h3>Short-Term Goals</h3>
             <ul>
               <li>
-                Contribute to development of innovative software solutions to
-                support XFEL’s research in data reduction
+                <strong>Short-term goal:</strong>
+                <br />
+                Help to develop software solutions that improve data reduction
+                for XFEL
               </li>
-              <li>Enhance detector precision and data quality</li>
+              <li>
+                <strong>Long-term goal:</strong>
+                <br />
+                Continue growing as a software engineer, contributing to
+                interdisciplinary projects and collaborating across scientific
+                domains to drive impactful research
+              </li>
             </ul>
-            <span class="fragment">
-              <h3>Long-Term Goals</h3>
-              <ul>
+
+            <aside class="notes">
+              <ul style="font-size: large">
                 <li>
-                  Grow into a leadership role in interdisciplinary project
-                  management, driving impactful software solutions across
-                  scientific domains
+                  My short-term goal is to contribute meaningfully to XFEL’s
+                  data reduction project, using my experience in data analysis
+                  and software engineering to enhance the research process
                 </li>
                 <li>
-                  Collaborate with global research teams to advance XFEL’s aim,
-                  leveraging my technical expertise to enable scientific
-                  discoveries
+                  In the long run, I hope to take on leadership responsibilities
+                  and help manage projects that bring together diverse teams
+                  from different scientific fields
                 </li>
               </ul>
-            </span>
-            <aside class="notes">
-              In the long run, I look forward to evolving into a leadership role
-              where I can drive the development of impactful, cross-disciplinary
-              software solutions that support XFEL’s global research
-              initiatives.
             </aside>
           </section>
         </section>
@@ -661,18 +377,21 @@
         <section>
           <h2>Final Thoughts</h2>
           <ul>
-            <li>Thank you for your time and the opportunity to interview</li>
             <li>
-              I look forward to contributing to XFEL’s mission with my skills
-              and expertise
+              Thank you for your time and the opportunity to discuss my
+              background
+            </li>
+            <li>
+              I am eager to contribute to XFEL’s aim of advancing X-ray research
+              through my experience in software engineering and data analysis
             </li>
           </ul>
           <aside class="notes">
-            I’m excited by the opportunity to contribute to XFEL’s
-            groundbreaking research and to grow within such a dynamic,
-            interdisciplinary environment. Thank you for your time, and I look
-            forward to discussing how my skills can contribute to XFEL’s
-            continued success.
+            Thank you again for your time and for considering my application. I
+            am genuinely excited about the possibility of joining XFEL and
+            contributing to its important work. I look forward to the
+            opportunity to contribute to your team and collaborate on solving
+            some of the unique challenges in data reduction
           </aside>
         </section>
       </div>
